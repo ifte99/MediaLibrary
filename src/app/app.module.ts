@@ -3,18 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DragComponent } from './drag/drag.component';
-import { SelectComponent } from './select/select.component';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AddPhotosComponent } from './add-photos/add-photos.component';
+import { ShowPhototsComponent } from './show-photots/show-photots.component';
+import { FormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    DragComponent,
-    SelectComponent
+    AddPhotosComponent,
+    ShowPhototsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

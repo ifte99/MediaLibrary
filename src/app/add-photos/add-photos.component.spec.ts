@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DragComponent } from './drag.component';
+import { AddPhotosComponent } from './add-photos.component';
 
-describe('DragComponent', () => {
-  let component: DragComponent;
-  let fixture: ComponentFixture<DragComponent>;
+describe('AddPhotosComponent', () => {
+  let component: AddPhotosComponent;
+  let fixture: ComponentFixture<AddPhotosComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DragComponent ]
+      declarations: [ AddPhotosComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DragComponent);
+    fixture = TestBed.createComponent(AddPhotosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
