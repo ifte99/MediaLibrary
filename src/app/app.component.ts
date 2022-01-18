@@ -16,4 +16,11 @@ export class AppComponent {
   openXl(content: any) {
     this.modalService.open(content, { size: 'xl' });
   }
+
+  page = 4;
+
+  getPageSymbol(current: number) {
+    return ['1', '2', '3', '4', '5', '6', '7'][current - 1];
+  }
+
 }

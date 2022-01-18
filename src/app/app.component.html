@@ -169,7 +169,15 @@
                   <td>@mdo</td>
                 </tr>
               </tbody>
+            
             </table>
+            <div class="d-flex justify-content-md-center">
+              <ngb-pagination [collectionSize]="70" [(page)]="page" aria-label="Custom pagination">
+                <ng-template ngbPaginationPrevious>Prev</ng-template>
+                <ng-template ngbPaginationNext>Next</ng-template>
+                <ng-template ngbPaginationNumber let-p>{{ getPageSymbol(p) }}</ng-template>
+              </ngb-pagination>
+            </div>
           </div>
 
         </div>
@@ -178,6 +186,8 @@
   </div>
 
 </div>
+
+
 
 
 <ng-template #content let-modal>
